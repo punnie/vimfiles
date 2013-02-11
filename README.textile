@@ -97,7 +97,7 @@ h2. Help Tags
 
 At first usage of vim, type:
 
-<pre></code>
+<pre><code>
 :call pathogen#helptags()
 </code></pre>
 
