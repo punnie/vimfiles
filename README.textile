@@ -49,14 +49,8 @@ Clone this repo into your home directory either as .vim (linux/mac) or
 vimfiles (Windows). Such as:
 
 <pre><code>
-git clone git://github.com/punnie/vimfiles.git ~/.vim
+git clone git://github.com/punnie/vimfiles.git ~/.vim --recursive
 </pre></code>
-
-Then 'cd' into the repo and run this to get the snippets submodule:
-
-<pre><code>
-git submodule update --init
-</code></pre>
 
 Now you should create a new <tt>.vimrc</tt> file in your home directory that
 loads the pre-configured one that comes bundled in this package. You can do it
