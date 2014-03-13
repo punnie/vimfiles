@@ -52,9 +52,6 @@ nmap <Down> gj
 nmap <Up> gk
 set fo=l
 
-"show fancy symbols in the powerline status bar
-let g:Powerline_symbols = 'fancy'
-
 "required so the status bar actually shows
 set laststatus=2
 
