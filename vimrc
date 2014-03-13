@@ -229,12 +229,12 @@ if has("gui_running")
     if has("gui_gnome")
         set term=gnome-256color
         colorscheme railscasts
-        set guifont=Menlo\ for\ Powerline\ 10
+        set guifont=Menlo\ 10
     endif
 
     if has("gui_mac") || has("gui_macvim")
         set guifont=Menlo:h12
-        set transparency=7
+        set transparency=5
     endif
 
     if has("gui_win32") || has("gui_win32s")
@@ -435,3 +435,7 @@ inoremap <Esc>D <left>
 if has("balloon_eval")
   set noballooneval
 endif
+
+" gist-vim configuration
+let g:gist_clip_command = 'pbcopy'
+let g:gist_detect_filetype = 1
