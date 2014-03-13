@@ -136,3 +136,6 @@
 [submodule "bundle/hardmode"]
 	path = bundle/hardmode
 	url = git://github.com/wikitopian/hardmode.git
+[submodule "bundle/vim-rbenv"]
+	path = bundle/vim-rbenv
+	url = https://github.com/tpope/vim-rbenv
