@@ -28,15 +28,12 @@ h1. Bundled Plugins
 * "vim-gist":https://github.com/mattn/gist-vim - vimscript for gist
 * "vim-jquery":https://github.com/itspriddle/vim-jquery - Vim syntax file to add some colorations for jQuery keywords and css selectors
 * "vim-preview":http://www.vim.org/scripts/script.php?script_id=3344 - [leader] P previews Markdown, Rdoc, Textile, html. Requires Ruby and other gems.
-* "vim-powerline":https://github.com/Lokaltog/vim-powerline/ - Pimped up status bar
 * "vim-ruby-sinatra":https://github.com/hallison/vim-ruby-sinatra - syntax highlight for Sinatra
 * "vim-ruby":https://github.com/vim-ruby/vim-ruby/wiki - syntax highlight, smart identation, auto-complete for Ruby
 * "vim-rvm":https://github.com/tpope/vim-rvm - RVM support for Vim
 * "vim-textobj-rubyblock":http://vimcasts.org/blog/2010/12/a-text-object-for-ruby-blocks/ - smart block selection in Ruby code
 * "vim-vroom":https://github.com/skalnik/vim-vroom - A vim plugin for running your Ruby tests
-* "vividchalk":http://www.vim.org/scripts/script.php?script_id=1891 - color scheme inspired by the classic Vibrant for Textmate
 * "Zencoding":http://www.vim.org/scripts/script.php?script_id=2981 - powerful way for HTML abbreviations (learn here: http://code.google.com/p/zen-coding/). Type abbreviation and press Ctrl+Y+comma (c-y ,)
-* "ZoomWin":https://github.com/vim-scripts/ZoomWin - Zoom in/out of windows (toggle between one window and multi-window)
 * "webapi-vim":https://github.com/mattn/webapi-vim - vim interface to Web API
 
 h1. Usage
