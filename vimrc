@@ -19,7 +19,7 @@ set backspace=indent,eol,start
 set history=1000
 
 set showcmd     "show incomplete cmds down the bottom
-set showmode    "show current mode down the bottom
+set noshowmode  "do not show current mode down the bottom
 
 set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
@@ -109,36 +109,39 @@ endif
 let g:gist_clip_command = 'pbcopy'
 let g:gist_detect_filetype = 1
 
-"color setup
-hi User1 guifg=#ffdad8  guibg=#880c0e
-hi User2 guifg=#000000  guibg=#F4905C
-hi User3 guifg=#292b00  guibg=#f4f597
-hi User4 guifg=#112605  guibg=#aefe7B
-hi User5 guifg=#051d00  guibg=#7dcc7d
-hi User7 guifg=#ffffff  guibg=#880c0e gui=bold
-hi User8 guifg=#ffffff  guibg=#5b7fbb
-hi User9 guifg=#ffffff  guibg=#810085
-hi User0 guifg=#ffffff  guibg=#094afe
+" "color setup
+" hi User1 guifg=#ffdad8  guibg=#880c0e
+" hi User2 guifg=#000000  guibg=#F4905C
+" hi User3 guifg=#292b00  guibg=#f4f597
+" hi User4 guifg=#112605  guibg=#aefe7B
+" hi User5 guifg=#051d00  guibg=#7dcc7d
+" hi User7 guifg=#ffffff  guibg=#880c0e gui=bold
+" hi User8 guifg=#ffffff  guibg=#5b7fbb
+" hi User9 guifg=#ffffff  guibg=#810085
+" hi User0 guifg=#ffffff  guibg=#094afe
 
-"statusline setup
-set statusline=
-set statusline+=%7*\[%n]                                  "buffernr
-set statusline+=%1*\ %<%F\                                "File+path
-set statusline+=%2*\ %y\                                  "FileType
-set statusline+=%3*\ %{''.(&fenc!=''?&fenc:&enc).''}      "Encoding
-set statusline+=%3*\ %{(&bomb?\",BOM\":\"\")}\            "Encoding2
-set statusline+=%4*\ %{&ff}\                              "FileFormat (dos/unix..)
+" "statusline setup
+" set statusline=
+" set statusline+=%7*\[%n]                                  "buffernr
+" set statusline+=%1*\ %<%F\                                "File+path
+" set statusline+=%2*\ %y\                                  "FileType
+" set statusline+=%3*\ %{''.(&fenc!=''?&fenc:&enc).''}      "Encoding
+" set statusline+=%3*\ %{(&bomb?\",BOM\":\"\")}\            "Encoding2
+" set statusline+=%4*\ %{&ff}\                              "FileFormat (dos/unix..)
 
-set statusline+=%5*\ %{fugitive#statusline()}\            "Fugitive
+" set statusline+=%5*\ %{fugitive#statusline()}\            "Fugitive
 
-set statusline+=%8*\ %#warningmsg#                        "Syntastic error message
-set statusline+=%8*\ %{SyntasticStatuslineFlag()}         "Syntastic line number
+" set statusline+=%8*\ %#warningmsg#                        "Syntastic error message
+" set statusline+=%8*\ %{SyntasticStatuslineFlag()}         "Syntastic line number
 
-set statusline+=%8*\ %=\ row:%l/%L\ (%p%%)\               "Rownumber/total (%)
-set statusline+=%9*\ col:%c\                              "Colnr
-set statusline+=%0*\ \ %m%r%w\ %P\ \                      "Modified? Readonly? Top/bot.
+" set statusline+=%8*\ %=\ row:%l/%L\ (%p%%)\               "Rownumber/total (%)
+" set statusline+=%9*\ col:%c\                              "Colnr
+" set statusline+=%0*\ \ %m%r%w\ %P\ \                      "Modified? Readonly? Top/bot.
 
 set laststatus=2
+
+let g:airline_left_sep=''
+let g:airline_right_sep=''
 
 "key mapping for window navigation
 map <C-h> <C-w>h
@@ -206,11 +209,11 @@ function! s:SetupSnippets()
     try
       call ExtractSnips("~/.vim/snippets/html", "eruby")
       call ExtractSnips("~/.vim/snippets/html", "xhtml")
-      call ExtractSnips("~/.vim/snippets/html", "php")
+      call ExtractSnips("~/.vim/snippets/html", "eco")
     catch
       call ExtractSnips("~/vimfiles/snippets/html", "eruby")
       call ExtractSnips("~/vimfiles/snippets/html", "xhtml")
-      call ExtractSnips("~/vimfiles/snippets/html", "php")
+      call ExtractSnips("~/vimfiles/snippets/html", "eco")
     endtry
 endfunction
 
