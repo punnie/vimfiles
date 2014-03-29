@@ -65,16 +65,17 @@ set foldnestmax=3       "deepest fold is 3 levels
 set nofoldenable        "dont fold by default
 
 if has("gui_running")
-    "tell the term has 256 colors
-    set t_Co=256
+  "tell the term has 256 colors
+  set t_Co=256
 
-    colorscheme wombat
-    set guitablabel=%M%t
-    set lines=40
-    set columns=115
+  colorscheme wombat
+  set guitablabel=%M%t
+  set lines=40
+  set columns=115
 
-    if has("gui_gnome")
-        set term=gnome-256color
+  if has("gui_gnome")
+      set term=gnome-256color
+        colorscheme railscasts
         set guifont=Menlo\ 10
     endif
 
