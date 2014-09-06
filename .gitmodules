@@ -70,9 +70,6 @@
 [submodule "bundle/vim-preview"]
 	path = bundle/vim-preview
 	url = git://github.com/greyblake/vim-preview.git
-[submodule "bundle/zencoding-vim"]
-	path = bundle/zencoding-vim
-	url = git://github.com/mattn/zencoding-vim.git
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
