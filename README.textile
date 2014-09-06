@@ -1,41 +1,3 @@
-h1. Bundled Plugins
-
-* "Ack":http://www.vim.org/scripts/script.php?script_id=2572 - type :Ack [search pattern] to search your entire project
-* "Align":http://www.vim.org/scripts/script.php?script_id=294 - align blocks of text using equal sign, make comment boxes and more
-* "bufexplorer":http://www.vim.org/scripts/script.php?script_id=42 - manage your file buffers
-* "CtrlP":https://github.com/kien/ctrlp.vim - replaces CommandT as a better fuzzy finder
-* "cucumber":http://www.vim.org/scripts/script.php?script_id=2973 - support for cucumber features such as syntax highlight, indentation, etc
-* "endwise":http://www.vim.org/scripts/script.php?script_id=2386 - support to close Ruby blocks such as 'if', 'do' with 'end'
-* "fugitive":http://www.vim.org/scripts/script.php?script_id=2975 - support for Git, adding convenient commands such as :Gstatus, :Gread, :Gmove
-* "haml":http://www.vim.org/scripts/script.php?script_id=1773 - syntax highlight for HAML
-* "hardmode":http://github.com/wikitopian/hardmode - disables on-demand the arrow keys, hjkl keys, pg up/down, and some others
-* "html5.vim":https://github.com/othree/html5.vim - omnicomplete function and syntax for HTML5
-* "markdown":http://www.vim.org/scripts/script.php?script_id=1242 - syntax highlight for Markdown
-* "NERD_commenter":http://www.vim.org/scripts/script.php?script_id=1218 - support to comment lines of code
-* "NERD_tree":http://www.vim.org/scripts/script.php?script_id=1658 - project pane that you can open with [leader] p
-* "NrrwRgn":https://github.com/chrisbra/NrrwRgn - A Narrow Region Plugin for vim (like Emacs Narrow Region)
-* "ragtag":http://www.vim.org/scripts/script.php?script_id=1896 - easier way to create tags for html, erb, etc
-* "rails":http://www.vim.org/scripts/script.php?script_id=1567 - lot's of tools to make it easier to manage your Rails projects
-* "snipmate":https://github.com/akitaonrails/snipmate.vim - support for textmate-like snippets for several languages
-* "supertab":http://www.vim.org/scripts/script.php?script_id=1643 - pseudo auto-complete with tab
-* "surround":http://www.vim.org/scripts/script.php?script_id=1697 - add, change, remove surrounding parentheses, brackets, quotes, etc
-* "syntastic":http://www.vim.org/scripts/script.php?script_id=2736 - checks for syntax errors in many languages
-* "textile":http://www.vim.org/scripts/script.php?script_id=2305 - syntax highlight for Textile
-* "vim-bundler":https://github.com/tpope/vim-bundler - Bundler support for Vim
-* "vim-buffergator":https://github.com/jeetsukumaran/vim-buffergator - Vim plugin to list, select and switch between buffers.
-* "vim-coffee-script":https://github.com/kchmck/vim-coffee-script - syntax highlight for Coffee Script
-* "vim-easymotion":https://github.com/Lokaltog/vim-easymotion - Vim motions on speed!
-* "vim-gist":https://github.com/mattn/gist-vim - vimscript for gist
-* "vim-jquery":https://github.com/itspriddle/vim-jquery - Vim syntax file to add some colorations for jQuery keywords and css selectors
-* "vim-preview":http://www.vim.org/scripts/script.php?script_id=3344 - [leader] P previews Markdown, Rdoc, Textile, html. Requires Ruby and other gems.
-* "vim-ruby-sinatra":https://github.com/hallison/vim-ruby-sinatra - syntax highlight for Sinatra
-* "vim-ruby":https://github.com/vim-ruby/vim-ruby/wiki - syntax highlight, smart identation, auto-complete for Ruby
-* "vim-rvm":https://github.com/tpope/vim-rvm - RVM support for Vim
-* "vim-textobj-rubyblock":http://vimcasts.org/blog/2010/12/a-text-object-for-ruby-blocks/ - smart block selection in Ruby code
-* "vim-vroom":https://github.com/skalnik/vim-vroom - A vim plugin for running your Ruby tests
-* "Zencoding":http://www.vim.org/scripts/script.php?script_id=2981 - powerful way for HTML abbreviations (learn here: http://code.google.com/p/zen-coding/). Type abbreviation and press Ctrl+Y+comma (c-y ,)
-* "webapi-vim":https://github.com/mattn/webapi-vim - vim interface to Web API
-
 h1. Usage
 
 Troubleshoot: Because of the large amount of submodules, if you ever have any
@@ -118,33 +80,6 @@ On Windows you have to download Ctags and add ctags.exe in your PATH.
 Mac OS X and most Linux distros come with Ruby already. If you're in Windows
 look for Luis Lavena's latest Ruby Installer (http://rubyforge.org/projects/rubyinstaller/)
 
-h2. Ubuntu 11.04 and/or Vim 7.3.35
-
-Ubuntu 11.04 comes bundled with Vim 7.3.35, which has "flaky" Ruby support.
-Even if you do everything right, you might see the following crashes when
-trying to use Command-T:
-
-<pre><code>
-Vim: Caught deadly signal SEGV
-Vim: Finished.
-
-Segmentation fault
-</code></pre>
-
-If this happens to you, update Vim to 7.3.154:
-
-<pre><code>
-hg clone https://vim.googlecode.com/hg/ ~/vim
-cd ~/vim
-hg update -C v7-3-154
-./configure --enable-rubyinterp --with-features=huge --enable-gui=gnome2
-make
-sudo make install
-</code></pre>
-
-More details can be found "here":http://kresimirbojcic.com/2011/05/14/installing-command-t-ubunutu-11.04-ruby-1.9.2.html
-Note that the options '--with-features=huge --enable-gui=gnome2' are not mentioned on the post above but they are necessary to also update the graphical version of vim (gvim).
-
 h2. Learn Vim
 
 Visit the following sites to learn more about Vim:
@@ -153,9 +88,3 @@ Visit the following sites to learn more about Vim:
 
 There are many sites teaching Vim, if you know of any other that are easy
 to follow for newcomers, let me know.
-
-h2. Credits
-
-* Original project and most of the heavy lifting: @scrooloose
-* Fork from where I got this: @akitaonrails
-* All the cool plugins for Rails, Cucumber and more: @timpope
