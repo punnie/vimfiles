@@ -142,3 +142,6 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
+[submodule "bundle/mustache"]
+	path = bundle/mustache
+	url = git://github.com/mustache/vim-mustache-handlebars.git
