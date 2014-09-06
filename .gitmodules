@@ -31,9 +31,6 @@
 [submodule "bundle/endwise"]
 	path = bundle/endwise
 	url = git://github.com/tpope/vim-endwise.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = git://github.com/akitaonrails/snipmate.vim.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
@@ -61,18 +58,12 @@
 [submodule "bundle/vim-ruby-sinatra"]
 	path = bundle/vim-ruby-sinatra
 	url = git://github.com/hallison/vim-ruby-sinatra.git
-[submodule "bundle/vim-textobj-user"]
-	path = bundle/vim-textobj-user
-	url = git://github.com/kana/vim-textobj-user.git
 [submodule "bundle/vim-textobj-rubybloc"]
 	path = bundle/vim-textobj-rubybloc
 	url = git://github.com/nelstrom/vim-textobj-rubyblock.git
 [submodule "bundle/vim-preview"]
 	path = bundle/vim-preview
 	url = git://github.com/greyblake/vim-preview.git
-[submodule "bundle/zencoding-vim"]
-	path = bundle/zencoding-vim
-	url = git://github.com/mattn/zencoding-vim.git
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
@@ -91,15 +82,9 @@
 [submodule "bundle/vim-bundler"]
 	path = bundle/vim-bundler
 	url = git://github.com/tpope/vim-bundler.git
-[submodule "bundle/actionscript"]
-	path = bundle/actionscript
-	url = git://github.com/endel/actionscript.vim.git
 [submodule "bundle/vim-autoclose"]
 	path = bundle/vim-autoclose
 	url = git://github.com/Townk/vim-autoclose.git
-[submodule "bundle/vim-golang"]
-	path = bundle/vim-golang
-	url = git://github.com/jnwhiteh/vim-golang.git
 [submodule "bundle/gist-vim"]
 	path = bundle/gist-vim
 	url = git://github.com/mattn/gist-vim.git
@@ -142,3 +127,6 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
+[submodule "bundle/mustache"]
+	path = bundle/mustache
+	url = git://github.com/mustache/vim-mustache-handlebars.git
